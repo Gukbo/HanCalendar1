@@ -6,7 +6,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HanCalendar">
         <activity android:name=".intro"
-            android:exported="true">
+            android:exported="true"> // 실행하자마자 인트로 실행.
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
