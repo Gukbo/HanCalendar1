@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         // 달력 클릭 이벤트를 처리하는 메소드 정의
         monthView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "."  ,Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position-4)  ,Toast.LENGTH_SHORT).show();
             }
         });
     }
