@@ -5,7 +5,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HanCalendar">
-        <activity android:name=".intro"
+        <activity android:name=".intro" /> // 시작하자마자 열리는 액티비티를 인트로로 바꿔줌.
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
