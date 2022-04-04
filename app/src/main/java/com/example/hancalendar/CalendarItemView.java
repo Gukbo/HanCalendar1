@@ -36,14 +36,14 @@ public class CalendarItemView extends AppCompatTextView{
     public void setItem(CalendarItem item) {
         this.item = item;
 
-        int day = item.getDay(); // 받아온 날짜가 0이 아니라면 색도 입히고 중앙정렬도 하고 폰트의 크기도 지정합니다.
-        if (day != 0) {
-            setText(String.valueOf(day));
-            setGravity(Gravity.CENTER);
-            setTextColor(Color.BLACK);
-            setTextSize(20);
-        } else { // 받아온 날짜가 0이면 TEXT를 빈칸으로 둡니다.
-            setText("");
+        int day = item.getDay();           // 날짜를 받아옴
+        if (day != 0) {                    // 받아온 날짜가 0이 아니라면
+            setText(String.valueOf(day));  // 받아온 날짜를 텍스트로 설정
+            setGravity(Gravity.CENTER);    // 텍스트를 중앙 정렬
+            setTextColor(Color.BLACK);     // 텍스트 색깔을 검정색으로 설정
+            setTextSize(20);               // 텍스트 크기를 20으로 설정
+        } else {                           // 받아온 날짜가 0이면
+            setText("");                   // 텍스트를 빈칸으로 설정
         }
     }
 }

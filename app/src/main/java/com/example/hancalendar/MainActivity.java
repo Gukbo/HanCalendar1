@@ -57,13 +57,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
     public void setMonthText(){ // 텍스트뷰에 설정된 년도와 월을 출력하는 것.
         int curYear = adt.getCurYear();
         int curMonth = adt.getCurMonth();
-        monthText.setText(curYear+"년 "+(curMonth+1)+"월"); // 이게 양식이다.
+        monthText.setText(curYear+"년 "+(curMonth+1)+"월");
     }
-
-
 }

@@ -12,5 +12,4 @@ public class CalendarItem {
         return dayValue;
     }
 }
-
 // 달력의 데이터를 입력받기 위한 클래스이기 때문에 오직 날짜 값만 클래스의 멤버로 가짐.
