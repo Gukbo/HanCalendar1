@@ -52,7 +52,14 @@ public class MainActivity extends AppCompatActivity {
         monthView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position-4)  ,Toast.LENGTH_SHORT).show();
+                if (adt.toast_month() == 1)  // 현재 달력의 달이 1월이라면
+                    Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position-5)  ,Toast.LENGTH_SHORT).show();
+                else if (adt.toast_month() == 2 || adt.toast_month() == 3)  // 현재 달력의 달이 2월 또는 3월이라면
+                    Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position-1)  ,Toast.LENGTH_SHORT).show();
+                else if (adt.toast_month() == 4) // 현재 달력의 달이 4월이라면
+                    Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position-4)  ,Toast.LENGTH_SHORT).show();
+                else if (adt.toast_month() == 5)  // 현재 달력의 달이 5월이라면
+                    Toast.makeText(MainActivity.this,"" + adt.toast_year() + "." + adt.toast_month() + "." + (position+1)  ,Toast.LENGTH_SHORT).show();
             }
         });
     }
